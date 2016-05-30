@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:background="@color/windowbg"
+    android:clickable="false">
+
+    <include layout="@layout/toolbar"
+        android:id="@+id/fragment_toolbar"
+        />
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        card_view:cardCornerRadius="@dimen/card_radius"
+        card_view:cardUseCompatPadding="true"
+        card_view:contentPaddingBottom="@dimen/card_padding"
+        card_view:contentPaddingLeft="@dimen/card_padding"
+        card_view:contentPaddingRight="@dimen/card_padding"
+        card_view:contentPaddingTop="@dimen/card_padding"
+        card_view:cardBackgroundColor="@color/card_view_bg"
+        android:layout_margin="15dp"
+        android:layout_below="@id/fragment_toolbar"
+        >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/detail_img_height"
+                android:id="@+id/poster_img"
+                android:scaleType="fitXY"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/title_text_size"
+                android:textStyle="bold"
+                android:id="@+id/movie_title"
+                android:layout_below="@id/poster_img"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/movie_date"
+                android:layout_below="@id/movie_title"
+                android:textSize="@dimen/date_text_size"
+                android:layout_alignParentRight="true"/>
+
+
+            <TextView
+                style="?android:attr/listSeparatorTextViewStyle"
+                android:paddingTop="5dp"
+                android:gravity="center_horizontal"
+                android:id="@+id/horizontalDivider1"
+                android:layout_below="@id/movie_date"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider_bg" />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:isIndicator="true"
+                android:numStars="10"
+                android:stepSize="1"
+                android:layout_below="@id/horizontalDivider1"
+                android:layout_alignParentLeft="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/votes_text"
+                android:layout_below="@id/ratingBar"
+                android:layout_alignRight="@id/ratingBar"
+                />
+            <TextView
+                style="?android:attr/listSeparatorTextViewStyle"
+                android:paddingTop="5dip"
+                android:gravity="center_horizontal"
+                android:id="@+id/horizontalDivider2"
+                android:layout_below="@id/votes_text"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider_bg" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/overview_text"
+                android:textSize="@dimen/overview_text_size"
+                android:layout_below="@id/horizontalDivider2"
+                />
+
+        </RelativeLayout>
+
+        </ScrollView>
+
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

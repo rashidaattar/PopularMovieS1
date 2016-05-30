@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="splash_bg">#000000</color>
+    <color name="bg_white">#FFFFFF</color>
+    <color name="primary">#43A047</color>
+    <color name="windowbg">#A5D6A7</color>
+    <color name="card_view_bg">#66BB6A</color>
+    <color name="primary_dark">#1B5E20</color>
+    <color name="divider_bg">#000000</color>
+
+</resources>

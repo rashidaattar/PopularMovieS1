@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Spotify Streamer</string>
+
+    <string name="movie_api_key">API key here</string>
+    <string name="title_activity_splash_screen">SplashScreenActivity</string>
+    <string name="base_url_tmdb">http://api.themoviedb.org/3/discover/movie?</string>
+    <string name="popularity_url">popularity.desc</string>
+    <string name="rating_url">vote_average.desc</string>
+    <string name="api_key_param">api_key</string>
+    <string name="sort_by_key_param">sort_by</string>
+    <string name="progress_bar_msg">Loading....</string>
+    <string name="page_param">page</string>
+    <string name="movie_title">MOVIE LIST</string>
+
+
+    <string name="movie_detail_title">MOVIE DETAILS</string>
+    <string name="base_url_img">http://image.tmdb.org/t/p</string>
+    <string name="pixel_img_url_w500">/w500/</string>
+    <string name="pixel_img_url_w342">/w342</string>
+    <string name="pixel_img_url_w92">/w92</string>
+    <string name="pixel_img_url_w154">/w154</string>
+    <string name="pixel_img_url_w185">/w185</string>
+    <string name="pixel_img_url_w780">/w780</string>
+
+
+    <string name="exit_app">Are you sure you want to exit?</string>
+
+
+    <string name="normal_tag">portrait</string>
+    <string name="large_tag">large-landscape</string>
+    <string name="xlarge_tag">xlarge-landscape</string>
+
+</resources>

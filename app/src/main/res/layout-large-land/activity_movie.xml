@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context=".activity.MovieActivity"
+    android:tag="large-landscape"
+    android:id="@+id/main_view">
+    <include layout="@layout/toolbar"
+        android:id="@+id/movie_toolbar"/>
+
+    <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/gridview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numColumns="auto_fit"
+        android:layout_weight="1"
+        android:verticalSpacing="0px"
+        android:layout_below="@id/movie_toolbar"
+        />
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fragment_container"
+        android:layout_toRightOf="@id/gridview"
+        android:layout_below="@id/movie_toolbar"
+        android:layout_weight="2"
+       ></FrameLayout>
+
+
+
+</RelativeLayout>
